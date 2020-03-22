@@ -1,6 +1,6 @@
 .gitignore
 
 venv
-.json
+token.json
 .idea
 __pycache__

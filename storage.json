@@ -1,0 +1,27 @@
+{
+  "relevant_columns": {
+    "bill_id": "string",
+    "bill_slug": "string",
+    "number": "string",
+    "title": "string",
+    "sponsor_title": "string",
+    "sponsor_name": "string",
+    "sponsor_id": "string",
+    "sponsor_party": "string",
+    "congressdotgov_url": "string",
+    "govtrack_url": "string",
+    "introduced_date": "date",
+    "active": "boolean",
+    "last_vote": "date",
+    "house_passage": "date",
+    "senate_passage": "date",
+    "enacted": "boolean",
+    "vetoed": "boolean",
+    "cosponsors": "int",
+    "cosponsors_by_party": "object",
+    "committees": "string",
+    "summary_short": "string",
+    "latest_major_action_date": "date",
+    "latest_major_action": "string"
+  }
+}
