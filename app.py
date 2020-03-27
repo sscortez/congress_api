@@ -1,7 +1,4 @@
 
-import json
-import os
-
 import pandas as pd
 
 from connections import get_recently_introduced_bills

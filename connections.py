@@ -1,7 +1,4 @@
 
-import json
-import os
-
 import requests
 
 from helpers import set_dataframe_view, load_json

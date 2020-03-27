@@ -23,5 +23,7 @@
     "summary_short": "string",
     "latest_major_action_date": "date",
     "latest_major_action": "string"
-  }
+  },
+  "dict": [1, 2, 4, 5],
+  "dict3": {"dict": 2}
 }

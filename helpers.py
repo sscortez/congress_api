@@ -1,6 +1,7 @@
 
 import os
 import json
+from collections import OrderedDict
 
 import pandas as pd
 
@@ -15,7 +16,7 @@ def set_dataframe_view():
     return True
 
 
-def load_json(filename=None, object_pairs_hook=None):
+def load_json(filename, object_pairs_hook=None):
     if '.json' not in filename:
         filename += '.json'
     jfile = os.path.join(_dirname, filename)
@@ -29,7 +30,7 @@ def load_json(filename=None, object_pairs_hook=None):
 def ingest_output(result):
     data = json.loads(result.content)
     data = data['results'][0]['bills']
-    col_data = load_json('storage')['relevant_columns']
+    col_data = load_json('storage', OrderedDict)['relevant_columns']
     cols = [x for x in col_data]
     _df = pd.DataFrame(data)[cols]
     for k, v in col_data.items():
