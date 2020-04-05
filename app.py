@@ -2,7 +2,7 @@
 import pandas as pd
 
 from connections import get_recently_introduced_bills
-from helpers import load_json, set_dataframe_view, ingest_output
+from helpers import set_dataframe_view, ingest_output
 
 
 OFFSET = 20

@@ -1,7 +1,8 @@
 
 import requests
+import sqlite3
 
-from helpers import set_dataframe_view, load_json
+from helpers import load_json
 
 BASE_URL = "https://api.propublica.org/congress/v1"
 
